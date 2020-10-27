@@ -65,15 +65,18 @@ public class Sat {
         return sekunde;
     }
 
-    public void setSati(int sati) {
+    public void setSati(int sati) throws Exception {
+        provjeri(sati, minute, sekunde);
         this.sati = sati;
     }
 
-    public void setMinute(int minute) {
+    public void setMinute(int minute) throws Exception {
+        provjeri(sati, minute, sekunde);
         this.minute = minute;
     }
 
-    public void setSekunde(int sekunde) {
+    public void setSekunde(int sekunde) throws Exception {
+        provjeri(sati, minute, sekunde);
         this.sekunde = sekunde;
     }
 
